@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER ddcorazon (299794@supinfo.com)
+MAINTAINER ddcorazon (29974@supinfo.com)
 ENV TZ=Europe/Paris
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update \
