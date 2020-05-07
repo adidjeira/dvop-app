@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    image: ddcorazon_nginx
+    ports:
+      - "8080:8080"
+  haproxy:
+    image: ddcorazon_haproxy
+    ports:
+      - "80:80"
+    depends_on:
+      - nginx
